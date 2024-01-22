@@ -57,10 +57,10 @@ input {
 }
 
 #entire-form {
-    position: static;
-}
-
-#entire-form {
     position: relative;
 
+}
+
+.block {
+    display: inline-flex;
 }
