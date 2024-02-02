@@ -23,29 +23,116 @@
                 <section id="madlibs-1-submit"></section>
 
                 <h1 class="text-light">Madlibs</h1>
-                <form onSubmit="return false" action="">
-                    <ul>
-                        <li><input type="text" placeholder="Article of Clothing" id="textOne"></li>
-                        <li><input type="text" placeholder="Superlative" id="textTwo"></li>
-                        <li><input type="text" placeholder="Plural Noun" id="textThree"></li>
-                        <li><input type="text" placeholder="Sport" id="textFour"></li>
-                        <li><input type="text" placeholder="Noun" id="textFive"></li>
-                        <li><input type="text" placeholder="Personal Title" id="textSix"></li>
-                        <li><input type="text" placeholder="Adverb" id="textSeven"></li>
-                        <li><input type="text" placeholder="Proper Noun" id="textEight"></li>
-                        <li><input type="text" placeholder="Song Title" id="textNine"></li>
-                        <li><input type="text" placeholder="Interjection" id="textTen"></li>
-                        <li><input type="text" placeholder="Article of Clothing" id="textEleven"></li>
-                        <li><input type="text" placeholder="Verb" id="textTwelve"></li>
-                        <li><input type="text" placeholder="Famous Person" id="textThirteen"></li>
-                        <li><input type="text" placeholder="Plural Noun" id="textFourteen"></li>
-                        <li><input type="text" placeholder="Plural Noun" id="textFifteen"></li>
-                        <li><input type="text" placeholder="Article of Clothing" id="textSixteen"></li>
-                        <li><input type="text" placeholder="Adjective" id="textSeventeen"></li>
-                        <li><input type="text" placeholder="Name of Job" id="textEighteen"></li>
-                        
 
-                        <li>
+            <main>
+              <!-- <form id="madlibs-form" name="madlibs-form" onSubmit="submitMadLibs(event)" action="">
+        inputs and labels
+                    <section>
+                        <div class="input-group">
+                            <label for="clothing-1"></label>
+                            <input type="text" placeholder="article of clothing" id="clothing-1" name="clothing-1" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="superlative-1"></label>
+                            <input type="text" placeholder="superlative" id="superlative-1" name="superlative-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="plural-noun-1"></label>
+                            <input type="text" placeholder="plural noun" id="plural-noun-1" name="plural-noun-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="sport-1"></label>
+                            <input type="text" placeholder="sport" id="sport-1" name="sport-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="noun-1"></label>
+                            <input type="text" placeholder="noun" id="noun-1" name="noun-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="personal-title-1"></label>
+                            <input type="text" placeholder="personal title" id="personal-title-1" name="personal-title-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="adverb-1"></label>
+                            <input type="text" placeholder="adverb-1" id="adverb-1" name="adverb-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="proper-noun-1"></label>
+                            <input type="text" placeholder="proper noun" id="proper-noun-1" name="proper-noun-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="song-title-1"></label>
+                            <input type="text" placeholder="song title" id="song-title-1" name="song-title-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="interjection-1"></label>
+                            <input type="text" placeholder="interjection" id="interjection-1" name="interjection-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="clothing-2"></label>
+                            <input type="text" placeholder="article of clothing" id="clothing-2" name="clothing-2" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="verb-1"></label>
+                            <input type="text" placeholder="verb" id="verb-1" name="verb-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="famous-person-1"></label>
+                            <input type="text" placeholder="famous person" id="famous-person-1" name="famous-person-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="plural-noun-2"></label>
+                            <input type="text" placeholder="plural noun" id="plural-noun-2" name="plural-noun-2" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="plural-noun-3"></label>
+                            <input type="text" placeholder="plural noun" id="plural-noun-3" name="plural-noun-3" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="clothing-3"></label>
+                            <input type="text" placeholder="article of clothing" id="clothing-3" name="clothing-3" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="adjective-1"></label>
+                            <input type="text" placeholder="adjective" id="adjective-1" name="adjective-1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="job"></label>
+                            <input type="text" placeholder="name of job" id="job" name="job" required>
+                        </div>
+                    </section>
+                    submit button
+                    <section id="madlibs-submit">
+                        <button type="submit">Generate</button>
+                    </section>
+                </form>
+                    <section id="completed-story" class="hide">
+
+                    </section>
+                </main>-->
+
+               <ul>
+                        <li><input type="text" placeholder="Article of Clothing" id="textOne" required></li>
+                        <li><input type="text" placeholder="Superlative" id="textTwo" required></li>
+                        <li><input type="text" placeholder="Plural Noun" id="textThree" required></li>
+                        <li><input type="text" placeholder="Sport" id="textFour" required></li>
+                        <li><input type="text" placeholder="Noun" id="textFive" required></li>
+                        <li><input type="text" placeholder="Personal Title" id="textSix" required></li>
+                        <li><input type="text" placeholder="Adverb" id="textSeven" required></li>
+                        <li><input type="text" placeholder="Proper Noun" id="textEight" required></li>
+                        <li><input type="text" placeholder="Song Title" id="textNine" required></li>
+                        <li><input type="text" placeholder="Interjection" id="textTen" required></li>
+                        <li><input type="text" placeholder="Article of Clothing" id="textEleven" required></li>
+                        <li><input type="text" placeholder="Verb" id="textTwelve" required></li>
+                        <li><input type="text" placeholder="Famous Person" id="textThirteen" required></li>
+                        <li><input type="text" placeholder="Plural Noun" id="textFourteen" required></li>
+                        <li><input type="text" placeholder="Plural Noun" id="textFifteen" required></li>
+                        <li><input type="text" placeholder="Article of Clothing" id="textSixteen" required></li>
+                        <li><input type="text" placeholder="Adjective" id="textSeventeen" required></li>
+                        <li><input type="text" placeholder="Name of Job" id="textEighteen" required></li>
+
+                   <li>
                             <button type="button" id="button" onclick="createParagraph()">Let's Go!</button>
                         </li>
                     </ul>
@@ -110,12 +197,12 @@
 
                 <p><button type="button">Submit</button></p>
                 </form>-->
-            </div>
+         <!--   </div>
         </div>
 
 
     </div>
-    <hr>
+    <hr>-->
    <!-- <div id="story">
         <h2>Result</h2>
         <p>I scoured my closet for the perfect _____ to wear. Dressing for the ________ place
@@ -148,11 +235,10 @@
         <p><strong>Me:</strong> “No, it’s actually a ___________ suit.”</p>
      
         <p><strong>The Devil:</strong> “You’re fired. Maybe you should pursue a career in ____________.”</p>
-    -->
-        <hr>
-    </div>
-<script type="module" src="./apply.js">
-    
+ 
+
+    </div>   -->
+<script src="./apply.js">  
 </script>
 </body>
 
