@@ -5,126 +5,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mysyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <title>Madlibs Project</title>
 </head>
 
 <body>
-    <h1>Madlibs</h1>
-    <hr>
+    
     <div class="header">
-        <h2>Mad Libs Instructions</h2>
+        <h2 class="text-light">Instructions</h2>
         <p><strong>Fill in the text boxes below. Then click the "Submit" button to reveal the completed story!</strong>
         </p>
 
         <div class="container">
-            <div id="entire-form" class="form">
+            <div id="entire-form" class="form justify-content-center">
                 <form id="madlibs-1" name="madlibs-1"></form>
                 <section id="madlibs-1-inputs"></section>
                 <section id="madlibs-1-submit"></section>
-                <input type="text" id="blank" placeholder="Article of Clothing" id="Article of Clothing" required>
+
+                <h1 class="text-light">Madlibs</h1>
+                <form onSubmit="return false" action="">
+                    <ul>
+                        <li><input type="text" placeholder="Article of Clothing" id="textOne"></li>
+                        <li><input type="text" placeholder="Superlative" id="textTwo"></li>
+                        <li><input type="text" placeholder="Plural Noun" id="textThree"></li>
+                        <li><input type="text" placeholder="Sport" id="textFour"></li>
+                        <li><input type="text" placeholder="Noun" id="textFive"></li>
+                        <li><input type="text" placeholder="Personal Title" id="textSix"></li>
+                        <li><input type="text" placeholder="Adverb" id="textSeven"></li>
+                        <li><input type="text" placeholder="Proper Noun" id="textEight"></li>
+                        <li><input type="text" placeholder="Song Title" id="textNine"></li>
+                        <li><input type="text" placeholder="Interjection" id="textTen"></li>
+                        <li><input type="text" placeholder="Article of Clothing" id="textEleven"></li>
+                        <li><input type="text" placeholder="Verb" id="textTwelve"></li>
+                        <li><input type="text" placeholder="Famous Person" id="textThirteen"></li>
+                        <li><input type="text" placeholder="Plural Noun" id="textFourteen"></li>
+                        <li><input type="text" placeholder="Plural Noun" id="textFifteen"></li>
+                        <li><input type="text" placeholder="Article of Clothing" id="textSixteen"></li>
+                        <li><input type="text" placeholder="Adjective" id="textSeventeen"></li>
+                        <li><input type="text" placeholder="Name of Job" id="textEighteen"></li>
+                        
+
+                        <li>
+                            <button type="button" id="button" onclick="createParagraph()">Let's Go!</button>
+                        </li>
+                    </ul>
+                </form>
+                <div id="answer"></div>
+
+
+            <!--inputs
+                <input type="text" id="blank1" placeholder="Article of Clothing" id="Article of Clothing" required>
                 <label for="Article of Clothing"></label>
 
-                <input type="text" id="blank" placeholder="Superlative" id="Superlative" required>
+                <input type="text" id="blank2" placeholder="Superlative" id="Superlative" required>
                 <label for="Superlative"></label>
 
-                <input type="text" id="blank" placeholder="Plural Noun" id="Plural Noun" required>
+                <input type="text" id="blank3" placeholder="Plural Noun" id="Plural Noun" required>
                 <label for="Plural Noun"></label>
 
-                <input type="text" id="blank" placeholder="Sport" id="Sport" required>
+                <input type="text" id="answer4" placeholder="Sport" id="Sport" required>
                 <label for="Sport"></label>
 
-                <input type="text" id="blank" placeholder="Noun" id="Noun" required>
+                <input type="text" id="answer5" placeholder="Noun" id="Noun" required>
                 <label for="Noun"></label>
 
-                <input type="text" id="blank" placeholder="Personal Title" required>
+                <input type="text" id="answer6" placeholder="Personal Title" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Adverb" required>
+                <input type="text" id="answer7" placeholder="Adverb" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Proper Noun" required>
+                <input type="text" id="answer8" placeholder="Proper Noun" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Song Title" required>
+                <input type="text" id="answer9" placeholder="Song Title" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Interjection" required>
+                <input type="text" id="answer10" placeholder="Interjection" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Article of Clothing" required>
+                <input type="text" id="answer11" placeholder="Article of Clothing" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Verb" required>
+                <input type="text" id="answer12" placeholder="Verb" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Famous Person" required>
+                <input type="text" id="answer13" placeholder="Famous Person" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Plural Noun" required>
+                <input type="text" id="answer14" placeholder="Plural Noun" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Plural Noun" required>
+                <input type="text" id="answer15" placeholder="Plural Noun" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Article of Clothing" required>
+                <input type="text" id="answer16" placeholder="Article of Clothing" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Adjective" required>
+                <input type="text" id="answer17" placeholder="Adjective" required>
                 <label for=""></label>
 
-                <input type="text" id="blank" placeholder="Name of Job" required>
+                <input type="text" id="answer18" placeholder="Name of Job" required>
                 <label for=""></label>
 
                 <p><button type="button">Submit</button></p>
-                </form>
+                </form>-->
             </div>
         </div>
 
 
     </div>
     <hr>
-    <div id="story">
+   <!-- <div id="story">
         <h2>Result</h2>
         <p>I scoured my closet for the perfect _____ to wear. Dressing for the ________ place
-            <!--Article of clothing, Superlative-->
+            
             around isn’t easy. Sweating _________ during the interview is a sure sign of weakness. I must
-            <!--Plural noun-->
+           
             remember to play up my strengths: _______, menacing stares, and _______ collecting.
         </p>
-        <!--Sport, Noun-->
+        
         <p>It has always been my dream to work with the Angel of Death, or _________ Devil. The power
-            <!--Personal title-->
+          
             and prestige are ________desirable.
         </p>
-        <!--Adverb-->
+        
         <p>The Gates of ________ tower above me as I ring the doorbell. I can’t believe _______ is
-            <!--Proper noun, song title-->
+           
             the doorbell chime. _________, his black _____________ looks better in person!
         </p>
-        <!--Interjection, Article of clothing-->
+  
         <p><strong>The Devil:</strong> “Welcome to Hell. Your interview will _______ now.”</p>
-        <!--Verb-->
+       
         <p><strong>Me:</strong> “It’s a pleasure to meet you. My name is ___________.”</p>
-        <!--Famous person-->
+       
         <p><strong>The Devil:</strong> “Who cares? I have only one question. Do you hate __________?”</p>
-        <!--Plural noun-->
+        
         <p><strong>Me:</strong> “Yes, yes I do. I hate them more than ___________.”</p>
-        <!--Plural noun-->
+       
         <p><strong>The Devil:</strong> “You’re hired. Wait, is that a ____________ you’re wearing?”</p>
-        <!--Article of clothing-->
+      
         <p><strong>Me:</strong> “No, it’s actually a ___________ suit.”</p>
-        <!--Adjective-->
+     
         <p><strong>The Devil:</strong> “You’re fired. Maybe you should pursue a career in ____________.”</p>
-        <!--Field of Study-->
+    -->
         <hr>
     </div>
-
-
+<script type="module" src="./apply.js">
+    
+</script>
+</body>
 
 
     <footer>
-        <p><cite>I do not own this story template. You can find the original fill-in-the-blank -<a
-                    href="https://cf.ltkcdn.net/teens/files/3125-job-interview-from-hell-madlib.pdf">HERE</a></cite></p>
+        <p><cite>I do not own this story template. You can find the original fill-in-the-blank -<a id="citation" href="https://cf.ltkcdn.net/teens/files/3125-job-interview-from-hell-madlib.pdf">HERE</a></cite></p>
     </footer>
 
 </html>
